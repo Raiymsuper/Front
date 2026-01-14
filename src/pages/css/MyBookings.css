@@ -1,0 +1,57 @@
+/* src/pages/MyBookings.css (same styles, just moved out of <style>) */
+.page{max-width:1120px;margin:0 auto;padding:22px 18px 60px}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:14px 0 16px}
+.title h1{margin:0 0 6px 0;font-size:28px;letter-spacing:-.3px}
+.title p{margin:0;color:var(--muted);font-weight:800;line-height:1.5}
+.topCta{margin-top:2px}
+
+.grid{display:grid;grid-template-columns:1fr 360px;gap:14px;align-items:start;margin-top:14px}
+.panel{border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow-soft);padding:16px}
+
+/* tabs */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 12px 0}
+.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;font-weight:900;cursor:pointer;color:var(--muted)}
+.tab--active{color:var(--ink);border-color:rgba(11,92,255,.28);background:linear-gradient(135deg,rgba(11,92,255,.08),rgba(46,123,255,.08));box-shadow:0 10px 26px rgba(11,92,255,.10)}
+
+/* filters */
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.search{flex:1;min-width:220px;display:flex;gap:10px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:14px;padding:10px 12px;font-weight:900;color:var(--muted)}
+.search input{border:0;outline:0;background:transparent;width:100%;font-weight:900;color:var(--ink)}
+.select{border:1px solid var(--line);border-radius:14px;padding:10px 12px;font-weight:900;background:#fff;color:var(--ink);outline:none}
+
+/* booking list */
+.list{display:flex;flex-direction:column;gap:10px}
+.item{border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;gap:12px;align-items:flex-start;background:#fff}
+.ico{width:44px;height:44px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--soft),var(--soft2));flex:0 0 auto;font-size:18px}
+.meta{flex:1;min-width:0}
+.row1{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.name{font-weight:1000}
+.sub{margin-top:4px;color:var(--muted);font-weight:800;font-size:13px;line-height:1.4}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chip{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:1000;font-size:12px;color:var(--muted)}
+.status{border-color:rgba(11,92,255,.20);background:linear-gradient(135deg,rgba(11,92,255,.08),rgba(46,123,255,.08));color:var(--ink)}
+.status--pending{border-color:rgba(11,92,255,.25)}
+.status--approved{border-color:rgba(22,163,74,.25);background:rgba(22,163,74,.08)}
+.status--rejected{border-color:rgba(239,68,68,.25);background:rgba(239,68,68,.08)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btnSmall{border:1px solid var(--line);background:#fff;border-radius:14px;padding:8px 10px;font-weight:1000;cursor:pointer}
+.btnSmall--danger{border-color:rgba(239,68,68,.25);background:rgba(239,68,68,.08);color:#991b1b}
+.btnSmall:disabled{opacity:.55;cursor:not-allowed}
+
+/* profile side */
+.profileTop{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.avatar{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(11,92,255,.12),rgba(46,123,255,.12));border:1px solid rgba(11,92,255,.20);font-weight:1000;color:var(--ink)}
+.pname{font-weight:1000}
+.psub{color:var(--muted);font-weight:900;font-size:13px;margin-top:3px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.kpi{border:1px solid var(--line);border-radius:18px;padding:12px;background:#fff}
+.kpi .n{font-weight:1100;font-size:20px}
+.kpi .t{color:var(--muted);font-weight:900;font-size:12px;margin-top:2px}
+.quick{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.quick a{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:16px;padding:12px 12px;background:#fff;font-weight:1000}
+
+.msg{margin-top:12px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:#fff;color:var(--muted);font-weight:900;line-height:1.45}
+.msg--err{border-color:rgba(239,68,68,.25);background:rgba(239,68,68,.08);color:#991b1b}
+.msg--ok{border-color:rgba(22,163,74,.25);background:rgba(22,163,74,.08);color:#14532d}
+
+@media (max-width:980px){.grid{grid-template-columns:1fr}}

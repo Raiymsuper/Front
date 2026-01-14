@@ -1,0 +1,65 @@
+/* src/pages/Login.css */
+/* Uses your global variables from Visit.css/styles.css (make sure they exist globally) */
+
+.authWrap{
+  min-height: calc(100vh - 70px);
+  display:grid;
+  place-items:center;
+  padding:24px 18px;
+  position:relative;
+  overflow:hidden;
+}
+.authCard{
+  width:100%;
+  max-width:420px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+  box-shadow: var(--shadow-main);
+  padding:18px;
+}
+.authHead{margin-bottom:12px}
+.authHead h1{margin:0 0 6px 0;font-size:26px;letter-spacing:-.3px}
+.authHead p{margin:0;color:var(--muted);font-weight:700;line-height:1.5}
+.field{margin-top:12px}
+label{display:block;font-weight:900;margin-bottom:6px}
+input, select{
+  width:100%;
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  outline:none;
+  font-weight:800;
+}
+input:focus, select:focus{
+  border-color: rgba(11,92,255,.45);
+  box-shadow: 0 0 0 4px rgba(11,92,255,.10);
+}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hint{margin-top:10px;color:var(--muted);font-weight:700;font-size:13px}
+.err{
+  margin-top:10px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(239,68,68,.25);
+  background: rgba(239,68,68,.08);
+  color:#991b1b;
+  font-weight:900;
+}
+.okbox{
+  margin-top:10px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(22,163,74,.25);
+  background: rgba(22,163,74,.08);
+  color:#14532d;
+  font-weight:900;
+}
+.authActions{margin-top:14px;display:flex;gap:10px}
+.authActions .btn{flex:1}
+.mini{
+  margin-top:22px;
+  display:flex;justify-content:space-between;gap:10px;
+  font-weight:800;color:var(--muted);font-size:13px;
+}
+.mini a{color:var(--ink)}

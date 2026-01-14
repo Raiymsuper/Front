@@ -1,0 +1,59 @@
+/* src/pages/Register.css */
+
+.authWrap{
+  min-height: calc(100vh - 70px);
+  display:grid;
+  place-items:center;
+  padding:24px 18px;
+}
+.authCard{
+  width:100%;
+  max-width:420px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+  box-shadow: var(--shadow-main);
+  padding:18px;
+}
+.authHead{margin-bottom:12px}
+.authHead h1{margin:0 0 6px 0;font-size:26px}
+.authHead p{margin:0;color:var(--muted);font-weight:700}
+.field{margin-top:12px}
+label{display:block;font-weight:900;margin-bottom:6px}
+input, select{
+  width:100%;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  font-weight:800;
+  outline:none;
+}
+input:focus, select:focus{
+  border-color: rgba(11,92,255,.45);
+  box-shadow:0 0 0 4px rgba(11,92,255,.10);
+}
+.err, .ok{
+  margin-top:12px;
+  padding:10px 12px;
+  border-radius:14px;
+  font-weight:900;
+}
+.err{
+  border:1px solid rgba(239,68,68,.25);
+  background:rgba(239,68,68,.08);
+  color:#991b1b;
+}
+.ok{
+  border:1px solid rgba(22,163,74,.25);
+  background:rgba(22,163,74,.08);
+  color:#14532d;
+}
+.actions{margin-top:16px}
+.mini{
+  margin-top:22px;
+  text-align:center;
+  font-weight:800;
+  color:var(--muted);
+  font-size:13px;
+}
+.mini a{color:var(--ink)}
